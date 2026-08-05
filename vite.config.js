@@ -1,7 +1,6 @@
-import { resolve } from 'path';
-import { defineConfig } from 'vite';
+const { resolve } = require('path');
 
-export default defineConfig({
+module.exports = {
   build: {
     rollupOptions: {
       input: {
@@ -11,4 +10,4 @@ export default defineConfig({
       },
     },
   },
-});
+};
